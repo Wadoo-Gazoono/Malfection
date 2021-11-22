@@ -34,6 +34,8 @@ public class StroderArmourLayer extends GeoLayerRenderer {
         matrixStackIn.pushPose();
         matrixStackIn.translate(0.0d, 0.89d, 0.0d);
         GeoModel model = this.getEntityModel().getModel(MODEL);
+        GeoBone e = model.getBone("head").get();
+        RenderUtils.translate(e, matrixStackIn);
         RenderType cameo =  RenderType.armorCutoutNoCull(TEXTURE);
         this.getRenderer().render(this.getEntityModel().getModel(HATMODEL), entityLivingBaseIn, partialTicks, cameo, matrixStackIn, bufferIn,
                 bufferIn.getBuffer(cameo), packedLightIn, OverlayTexture.NO_OVERLAY, 1f, 1f, 1f, 1f);

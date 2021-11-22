@@ -1,0 +1,11 @@
+{
+  "stroder.wail": {
+    "subtitle": "stroder.stroder.wail",
+    "sounds": [
+      {
+        "name": "stroder:stroder/wail",
+        "stream": true
+      }
+    ]
+  }
+}

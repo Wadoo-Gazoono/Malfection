@@ -13,7 +13,7 @@ public class StroderModel extends AnimatedGeoModel {
 
     @Override
     public ResourceLocation getTextureLocation(Object object) {
-        return new ResourceLocation(StroderMod.MOD_ID, "textures/entity/stroder_hat.png");
+        return new ResourceLocation(StroderMod.MOD_ID, "textures/entity/stroder.png");
     }
 
     @Override

@@ -2,6 +2,7 @@ package com.wadoo.stroder;
 
 
 import com.wadoo.stroder.common.registry.StroderEntities;
+import com.wadoo.stroder.common.registry.StroderSounds;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
@@ -33,7 +34,7 @@ public class StroderMod {
         MinecraftForge.EVENT_BUS.register(this);
 
         StroderEntities.ENTITIES.register(bus);
-
+        StroderSounds.SOUNDS.register(bus);
 
         GeckoLib.initialize();
     }
