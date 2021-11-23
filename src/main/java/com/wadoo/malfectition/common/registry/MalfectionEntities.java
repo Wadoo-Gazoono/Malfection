@@ -1,16 +1,17 @@
-package com.wadoo.stroder.common.registry;
+package com.wadoo.malfectition.common.registry;
 
-import com.wadoo.stroder.StroderMod;
-import com.wadoo.stroder.common.entities.StroderEntity;
+
+import com.wadoo.malfectition.Malfectition;
+import com.wadoo.malfectition.common.entities.StroderEntity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
 import net.minecraftforge.fmllegacy.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 
-public class StroderEntities {
+public class MalfectionEntities {
     public static final DeferredRegister<EntityType<?>> ENTITIES
-            = DeferredRegister.create(ForgeRegistries.ENTITIES, StroderMod.MOD_ID);
+            = DeferredRegister.create(ForgeRegistries.ENTITIES, Malfectition.MOD_ID);
 
     public static final RegistryObject<EntityType<StroderEntity>> STRODER =
             ENTITIES.register("stroder",
