@@ -19,5 +19,13 @@ public final class EntityAttributes {
                 .add(Attributes.ARMOR, 4.0D)
                 .add(Attributes.FOLLOW_RANGE, 28.0D)
                 .build());
+
+        event.put(MalfectionEntities.TIMBER_FELLER.get(), Mob.createMobAttributes()
+                .add(Attributes.MAX_HEALTH, 18.0D)
+                .add(Attributes.MOVEMENT_SPEED, 0.278D)
+                .add(Attributes.KNOCKBACK_RESISTANCE, 0.3D)
+                .add(Attributes.ARMOR, 4.0D)
+                .add(Attributes.FOLLOW_RANGE, 28.0D)
+                .build());
     }
 }

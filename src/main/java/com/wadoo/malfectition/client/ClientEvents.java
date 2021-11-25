@@ -3,6 +3,7 @@ package com.wadoo.malfectition.client;
 
 import com.wadoo.malfectition.Malfectition;
 import com.wadoo.malfectition.client.renderer.StroderRenderer;
+import com.wadoo.malfectition.client.renderer.TimberFellerRenderer;
 import com.wadoo.malfectition.common.registry.MalfectionEntities;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
@@ -17,7 +18,7 @@ public class ClientEvents {
     @SubscribeEvent
     public static void registerRenderers(final EntityRenderersEvent.RegisterRenderers event) {
         event.registerEntityRenderer(MalfectionEntities.STRODER.get(), StroderRenderer::new);
-
+        event.registerEntityRenderer(MalfectionEntities.TIMBER_FELLER.get(), TimberFellerRenderer::new);
 
     }
 
